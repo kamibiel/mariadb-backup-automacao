@@ -6,8 +6,8 @@
 DATA=$(date +"%Y%m%d_%H%M%S")             # Inclui data e hora
 PASTA_TEMP="/tmp/bkp_bancos"
 PASTA_DESTINO="/mnt/gdrive_backup/bkp_bd"
-USUARIO_BACKUP="blackbit_kamibiel"         # Seu usuário
-SENHA_BACKUP="Bl4Ck*B1t#7532159"           # Sua senha
+USUARIO_BACKUP="[NOME DO USUÁRIO]"         # Seu usuário
+SENHA_BACKUP="[SENHA]"           # Sua senha
 
 # ---------------------------------
 # Criação da pasta temporária
@@ -54,5 +54,3 @@ rm -rf "$PASTA_TEMP"
 # Fim
 # ---------------------------------
 echo "Backup concluído com sucesso em $DATA"
-
-30 23 * * * /home/kamibiel/backup_mariadb.sh >> /home/kamibiel/backup_mariadb.log 2>&1
